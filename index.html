@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cassidy Kovell's Portfolio</title>
-        <link rel="resetsheet" href="./assets/reset.css">
-		<link rel="stylesheet" href="./assets/style.css" />
-	</head>
-	<body>
-		<header> 
-			<h1>Cassidy Kovell</h1>
-            <nav>
-                <ul id="navigation">
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Resume</li>
-                    <li>Contact Me</li>
-                </ul>
-            </nav>
-        </header>
-		<main>
-			<article>
-				<img id="flowers" src="./assets/flowers.jpg">
-			</article>
-			<artcle>
-				<div class="vl"></div>
-				<h2>🂽 About Me 🂽</h2>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cassidy Kovell's Portfolio</title>
+	<link rel="resetsheet" href="./assets/reset.css">
+	<link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Cassidy Kovell</h1>
+		<nav>
+			<ul id="navigation">
+				<li><a href="#section1">About Me</a></li>
+				<li><a href="#section2">Work</a></li>
+				<li><a href="#section3">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<img id="flowers" src="./assets/flowers.jpg">
+		</article>
+		<article class="content-container" id="section1">
+			<div>
+			<h2>🂽 About Me 🂽</h2>
+			<img id="face" src="./assets/face.png" />
+			</div>
+			<div class="vl">
 				<p>This will be a paragraph about me</p>
-				<img id="face" src="./assets/face.png"/>
-			</article>
-			<article>
-				<div class="vl"></div>
-				<h3>🂽 Work 🂽</h3>
-			<section id="grid">
-				<img class="pics" src="assets/books.jpg">
-				<img class="pics" src="assets/open.jpg">
-				<img class="pics" src="./assets/closed.jpg">
-			</section>
-			</article>
-			<artcle>
-				<div class="vl"></div>
-				<h4>🂽 Contact Me 🂽</h4>
-				<p>(415) 407-100</p>
-				<p>cassidy0kovell@gmail.com</p>
-				<p>GitHub</p>
-			</article>
-		</main>
-	</body>
+			</div>
+		</article>
+		<article class="content-container" id="section2">
+			<div>
+			<h2>🂽 Work 🂽</h2>
+			</div>
+			<div class="vl">
+				<a href="https://cassidykovell.github.io/prework-study-guide/" target="_blank"><img class="pics" src="assets/books.jpg"></a>
+				<div class="grid">
+				<a href="https://cassidykovell.github.io/css-cheatsheet/" target ="_blank"><img class="pics" src="assets/open.jpg"></a>
+				<a href="https://cassidykovell.github.io/landing-page/" target="_blank"><img class="pics" src="./assets/closed.jpg"></a>
+				</div>
+			</div>
+		</article>
+		<article class="content-container" id="section3">
+			<div>
+			<h2>🂽 Contact Me 🂽</h2>
+			</div>
+			<div class="vl">
+			<div class="play">
+				<p class="contact">(415) 407-100</p>
+				<p class="contact">cassidy0kovell@gmail.com</p>
+				<p class="contact">GitHub</p>
+			</div>
+			</div>
+		</article>
+	</main>
+</body>
+
 </html>
