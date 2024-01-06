@@ -1,17 +1,19 @@
+/* starting off with my root colors, yes the cream is really more green*/ 
 :root {
     --cream: rgb(204, 204, 168);
     --purple: rgb(187, 134, 187);
     --green: rgb(85, 124, 85); 
     --dp: rgb(130, 76, 130);
 }
+
 * {
     background-color: var(--cream);
     box-sizing: border-box;
 }
 
+/* Here setting the header to flex and giving it a very cool border*/
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     color: var(--green);
     border: 7px;
@@ -21,6 +23,7 @@ header {
     background-color: var(--cream);
 }
 
+/*styling up the h1*/
 h1 {
     font-size: 50px;
     font-style: oblique;
@@ -28,9 +31,9 @@ h1 {
     padding: 0px 0px 0px 10px;
 }
 
+/*crafting my nav bar and making sure they appear in a row by setting the display to flex as well as having some spacing between them*/
 #navigation {
     display: flex;
-    flex-direction: row;
     gap: 1em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -38,6 +41,7 @@ h1 {
     padding: 20px;
 }
 
+/*styling up those little list items*/
 #navigation li {
     padding: 8px;
     border: 5px solid;
@@ -49,6 +53,7 @@ h1 {
     font-weight: bold;
 }
 
+/*making it so that the links to the places in the page aren't ugly by making the font green and it have a background that is a linear gradient instead of just removing color.*/
 nav ul li a {
     color: var(--green); 
     text-decoration: none;
@@ -56,6 +61,7 @@ nav ul li a {
     outline: none;
 }
 
+/*just a little but extra stylizing for the list items plus making them light up when you hover over them*/
 #navigation li :hover {
     box-shadow: inset 0px 0px 8px
     rgb(208, 208, 208), 0 0 15px
@@ -63,6 +69,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
+/* Using an image of flowers to break up the nav bar from the content of the page*/
 #flowers {
     width: 100%;
     height: 200px;
@@ -70,19 +77,13 @@ nav ul li a {
     border-radius: 20px;
 }
 
-.border {
-    border: 7px solid;
-    border-radius: 20px;
-    border-color: var(--purple);
-    border-style: groove;
-    margin: 5px 7px 7px 7px;
-}
-
+/*using display flex to organize my page as well as having a gap between sections*/
 .content-container {
     display: flex;
     margin: 1em;
 }
 
+/*stylizing those h2s*/
 .content-container h2 {
     width: 8em;
     text-decoration: overline;
@@ -92,12 +93,14 @@ nav ul li a {
     font-style: oblique;
 }
 
+/*very cool vertical line seperating content on the page*/
 .vl {
     border-left: 6px solid var(--dp);
     padding: 1em;
 
 }
 
+/*my avatar that is placed under the about me heading*/
 #face {
     border: 5px solid var(--purple);
     border-style: groove;
@@ -108,6 +111,7 @@ nav ul li a {
     margin-bottom: 2em;
 }
 
+/*stylizing those ps up*/
 p {
     color: var(--green);
     font-size: 30px;
@@ -117,6 +121,7 @@ p {
     font-weight: bold;
 }
 
+/*giving those pics to the deployed links a cool border and sizing them*/
 .pics {
     border: 7px solid var(--dp);
     border-radius: 15px;
@@ -124,6 +129,16 @@ p {
     width: 400px;
 }
 
+/*making them bigger then you hover over them*/
+.pics:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 8px
+    rgb(208, 208, 208), 0 0 15px
+    rgb(145, 89, 147);
+    border-radius: 10px;
+}
+
+/*info for displaying the deployed websites and their images*/
 #text-box {
     display: flex;
     flex-wrap: wrap;
@@ -132,17 +147,12 @@ p {
     gap: 2em;
 }
 
+/*placing those text boxes within the images*/
 .wrp {
-    width: auto;
     position: relative;
 }
 
-img {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
+/*placing the text boxes in the right place in the images*/
 .text {
     width: 100%;
     bottom: 5px;
@@ -152,6 +162,7 @@ img {
     display: flex;
 }
 
+/*stylizing my h3 aka the titles for my images/deployed websites*/
 .text h3 {
     font-size: 20px;
     color: var(--green);
@@ -162,23 +173,15 @@ img {
     font-style: oblique;
 }
 
-.pics:hover {
-    transform: scale(1.1);
-    box-shadow: inset 0px 0px 8px
-    rgb(208, 208, 208), 0 0 15px
-    rgb(145, 89, 147);
-    border-radius: 10px;
-}
-
-
-.play {
+/*placing those contact info boxes and making them wrap when neccesary*/
+#play {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 5em;
     padding-left: 3em;
 }
 
+/*styling those contact info boxes*/
 .contact {
     font-size: 30px;
     font-style: oblique;
@@ -190,6 +193,7 @@ img {
     padding: 15px;
 }
 
+/*making them bigger when hovered over and also glow*/
 .contact:hover {
     transform: scale(1.1);
     box-shadow: inset 0px 0px 8px
@@ -198,12 +202,14 @@ img {
     border-radius: 10px;
 }
 
-.content-container .vl .play a {
+/*styling the link button for github*/
+.content-container .vl #play a {
     color: var(--green); 
     text-decoration: none;
     outline: none;
 }
 
+/*below are media queries for responsive playout the original way to view the webpage is laptop 1440px*/
 @media (max-width: 1024px){
     .play {
         display: flex;
