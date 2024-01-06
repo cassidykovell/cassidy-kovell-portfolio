@@ -122,7 +122,6 @@ p {
     border-radius: 15px;
     height: 200px;
     width: 400px;
-    margin: .5em;
 }
 
 #text-box {
@@ -130,6 +129,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 2em;
 }
 
 .wrp {
