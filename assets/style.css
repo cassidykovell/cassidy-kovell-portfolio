@@ -23,6 +23,10 @@ header {
     background-color: var(--cream);
 }
 
+.responsive-header {
+    display: none;
+}
+
 /*styling up the h1*/
 h1 {
     font-size: 50px;
@@ -126,7 +130,7 @@ p {
     border: 7px solid var(--dp);
     border-radius: 15px;
     height: 200px;
-    width: 400px;
+    width: 100%;
 }
 
 /*making them bigger then you hover over them*/
@@ -150,6 +154,10 @@ p {
 /*placing those text boxes within the images*/
 .wrp {
     position: relative;
+}
+
+.prework {
+    flex-basis: 100%;
 }
 
 /*placing the text boxes in the right place in the images*/
@@ -236,6 +244,10 @@ p {
     .contact{
         font-size: 20px;
     }
+
+    .prework {
+        flex-basis: 0%;
+    }
   }
 
 @media (max-width: 425px) {
@@ -244,13 +256,33 @@ p {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);  
     }
-    
+
     header {
         border: none;
     }
 
     #navigation {
-        padding: 20px 20px 20px 250px;
+        padding: 20px 20px 20px 275px;
+
     }
 
+    h1 {
+        display: none;
+    }
+
+    .responsive-header {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        border: 7px;
+        border-style: groove;
+        border-color: var(--purple);
+        border-radius: 15px;
+    }
+
+    .prework {
+        flex-basis: 0%;
+    }
 }
