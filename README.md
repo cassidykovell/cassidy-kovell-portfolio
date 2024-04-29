@@ -12,8 +12,7 @@ No notes for installation.
 ## Usage
 To use this website reference the navigation bar that outlines each section of the webpage. Use the "about me" section by navigating to it and reading the information written. Use the "work" section by navigating to it and using any of the images to take you to the varies deplayed webpages. Use the "contact me" section by navigating to it and viewing the two forms of contact or clicking the GitHub button to be relocated to my GitHub.
 
-![alttext](assets/deployed-webpage.png)
-
+![alttext](assets/deployed-website.png)
 ## Credits
 Reference this video for putting titles over my images: https://www.youtube.com/watch?v=hr4JiDr7Aec
 
